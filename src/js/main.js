@@ -28,3 +28,16 @@ let template = `
 `;
 
 markerStJean.bindPopup(template);
+
+// Add circle
+
+const circle = L.circle([42.8806, -8.5446], {
+  radius: 100000,
+  color: `green`,
+  fillColor: "red",
+  fillOpacity: 0.2,
+})
+  .addTo(map)
+  .bindPopup(
+    "<p> To become a certified Camino Pilgrim, you must start outside the red to walk at least 100 kilometers"
+  );
