@@ -39,7 +39,7 @@ let cardSantiago = `
 
 <h4>Santiago de Compostela</h4>
 <div style="padding-top:1rem">
-<img width="150" height="1500"src="./images/santiago.png"/>
+<img width="150" height="150"src="./images/santiago.png"/>
 </div?
 `;
 
@@ -53,13 +53,29 @@ const markerPamplona = L.marker([42.8196, -1.6446]).addTo(map);
 
 let cardPamplona = `
 
-<h4>Pamplona</h4>
+<h4> Pamplona  /  Iruña </h4>
 <div style="padding-top:1rem">
-<img width="150" height="1500"src="./images/santiago.png"/>
+<img width="150" height="150"src="./images/pamplona.png"/>
 </div?
 `;
 
 markerPamplona.bindPopup(cardPamplona);
+
+// Adding Marker on the map (Logroño)
+
+const markerLogroño = L.marker([41.8196, -1.6446]).addTo(map);
+
+// Add popup card (Logroño)
+
+let cardLogroño = `
+
+<h4>Logroño</h4>
+<div style="padding-top:1rem">
+<img width="150" height="150"src="./images/pamplona.png"/>
+</div?
+`;
+
+markerLogroño.bindPopup(cardLogroño);
 
 // Add circle
 
