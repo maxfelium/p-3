@@ -1,6 +1,6 @@
 const apiKey = `pk.eyJ1IjoibWF4ZmVsaXUiLCJhIjoiY2wyYmphMHcxMDR4aTNpc2Y5ODVobWNhayJ9.rWHYsp9d_JCrxZGTaEXPew`;
 
-var map = L.map("map").setView([40.5937, -3.0492], 5.7);
+var map = L.map("map").setView([43.2937, -5.0492], 6.5);
 
 L.tileLayer(
   `https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}`,
@@ -39,11 +39,27 @@ let cardSantiago = `
 
 <h4>Santiago de Compostela</h4>
 <div style="padding-top:1rem">
-<img width="150" height="200"src="./images/santiago.jpg"/>
+<img width="150" height="1500"src="./images/santiago.png"/>
 </div?
 `;
 
 markerSantiago.bindPopup(cardSantiago);
+
+// Adding Marker on the map (Pamplona)
+
+const markerPamplona = L.marker([42.8196, -1.6446]).addTo(map);
+
+// Add popup card (Pamplona)
+
+let cardPamplona = `
+
+<h4>Pamplona</h4>
+<div style="padding-top:1rem">
+<img width="150" height="1500"src="./images/santiago.png"/>
+</div?
+`;
+
+markerPamplona.bindPopup(cardPamplona);
 
 // Add circle
 
@@ -59,15 +75,3 @@ const circle = L.circle([42.8806, -8.5446], {
   );
 
 // Add line for the trail
-
-const stage25 = L.polygon(
-  [
-    [42.849032167963314, -8.22733607057462],
-    [42.8806, -8.5446],
-  ],
-  {
-    color: `black`,
-  }
-)
-  .addTo(map)
-  .bindPopup("<p>Stage 25: O Monte to Santiago de Compostela");
