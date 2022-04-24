@@ -5,3 +5,7 @@ video {
   width: 100%;
   height: auto;
 }
+
+#map {
+  height: 180px;
+}
