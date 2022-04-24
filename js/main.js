@@ -41,3 +41,15 @@ const circle = L.circle([42.8806, -8.5446], {
   .bindPopup(
     "<p> To become a certified Camino Pilgrim, you must start outside the red to walk at least 100 kilometers"
   );
+
+// Add line for the trail
+
+const polygon = L.polygon(
+  [
+    [42.849032167963314, -8.22733607057462],
+    [42.8806, -8.5446],
+  ],
+  {
+    color: `black`,
+  }
+).addTo(map);
