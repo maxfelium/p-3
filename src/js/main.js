@@ -63,15 +63,15 @@ markerPamplona.bindPopup(cardPamplona);
 
 // Adding Marker on the map (Logroño)
 
-const markerLogroño = L.marker([41.8196, -1.6446]).addTo(map);
+const markerLogroño = L.marker([42.466, -2.4446]).addTo(map);
 
 // Add popup card (Logroño)
 
 let cardLogroño = `
 
-<h4>Logroño</h4>
+<h4>Logroño / Fuenmayor</h4>
 <div style="padding-top:1rem">
-<img width="150" height="150"src="./images/pamplona.png"/>
+<img width="150" height="150"src="./images/logroño.jpg"/>
 </div?
 `;
 
