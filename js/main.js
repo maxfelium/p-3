@@ -39,7 +39,7 @@ let cardSantiago = `
 
 <h4>Santiago de Compostela</h4>
 <div style="padding-top:1rem">
-<img width="150" height="200"src="./images/stjean2.jpg"/>
+<img width="150" height="200"src="./images/santiago.jpg"/>
 </div?
 `;
 
