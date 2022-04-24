@@ -13,11 +13,11 @@ L.tileLayer(
   }
 ).addTo(map);
 
-// Adding Marker on the map
+// Adding Marker on the map (SJPDP)
 
 const markerStJean = L.marker([43.1631, -1.2381]).addTo(map);
 
-// Add popup card
+// Add popup card (SJPDP)
 
 let template = `
 
@@ -28,6 +28,22 @@ let template = `
 `;
 
 markerStJean.bindPopup(template);
+
+// Adding Marker on the map (Santiago)
+
+const markerSantiago = L.marker([42.8806, -8.5446]).addTo(map);
+
+// Add popup card (Santiago)
+
+let cardSantiago = `
+
+<h4>Santiago de Compostela</h4>
+<div style="padding-top:1rem">
+<img width="150" height="200"src="./images/stjean2.jpg"/>
+</div?
+`;
+
+markerSantiago.bindPopup(cardSantiago);
 
 // Add circle
 
