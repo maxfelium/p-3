@@ -22,7 +22,9 @@ const markerStJean = L.marker([43.1631, -1.2381]).addTo(map);
 let template = `
 
 <h4>Saint Jean Pied de Port</h4>
-
+<div style="padding-top:1rem">
+<img width="150" height="200"src="./images/stjean2.jpg"/>
+</div?
 `;
 
 markerStJean.bindPopup(template);
