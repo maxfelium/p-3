@@ -109,6 +109,22 @@ let cardLeón = `
 
 markerLeón.bindPopup(cardLeón);
 
+// Adding Marker on the map (Ponferrada)
+
+const markerPonferrada = L.marker([42.553666675466, -6.5968446]).addTo(map);
+
+// Add popup card (Ponferrada)
+
+let cardPonferrada = `
+
+<h4>Ponferrada</h4>
+<div style="padding-top:1rem">
+<img width="150" height="150"src="./images/leon.jpg"/>
+</div?
+`;
+
+markerPonferrada.bindPopup(cardLeón);
+
 // Add circle
 
 const circle = L.circle([42.8806, -8.5446], {
