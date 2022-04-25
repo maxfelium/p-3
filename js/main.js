@@ -117,13 +117,13 @@ const markerPonferrada = L.marker([42.553666675466, -6.5968446]).addTo(map);
 
 let cardPonferrada = `
 
-<h4>Ponferrada</h4>
+<h4>Ponferrada / Templars</h4>
 <div style="padding-top:1rem">
-<img width="150" height="150"src="./images/leon.jpg"/>
+<img width="150" height="150"src="./images/ponferrada.jpg"/>
 </div?
 `;
 
-markerPonferrada.bindPopup(cardLeón);
+markerPonferrada.bindPopup(cardPonferrada);
 
 // Add circle
 
