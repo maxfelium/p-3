@@ -167,11 +167,27 @@ var santiagoCompostela = [42.8806, -8.5446];
 // Fly to buttons
 
 var all_buttons = "#button-fly-sjpdp, #button-fly-bur, #button-fly-san";
+var sjpdpButton = document.querySelector("#button-fly-sjpdp");
+var burButton = document.querySelector("#button-fly-bur");
+var sanButton = document.querySelector("#button-fly-san");
+function resetButtons() {
+  sjpdpButton.classList.remove("pure-button-disabled");
+  burButton.classList.remove("pure-button-disabled");
+  sanButton.classList.remove("pure-button-disabled");
+}
 
-$("#button-fly-sjpdp").on("click", function () {
-  $(all_buttons).removeClass("pure-button-disabled");
-  map.flyTo(saintJean, 11);
-});
+// $("#button-fly-sjpdp").on("click", function () {
+//   $(all_buttons).removeClass("pure-button-disabled");
+//   map.flyTo(saintJean, 11);
+// });
+
+document
+  .querySelector("#button-fly-sjpdp")
+  .addEventListener("click", function () {
+    resetButtons();
+    map.flyTo(saintJean, 11);
+  });
+
 $("#button-fly-bur").on("click", function () {
   $(all_buttons).removeClass("pure-button-disabled");
   map.flyTo(burgosMeseta, 11);
