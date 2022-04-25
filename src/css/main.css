@@ -12,6 +12,7 @@ video {
   height: 500px;
   width: 800px;
   margin: 5rem auto;
+  padding-bottom: 0rem;
 }
 
 #title {
@@ -61,4 +62,11 @@ video {
   margin: 4px 2px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#buttons {
+  text-align: center;
+  padding-bottom: 30%;
+  position: relative;
+  padding-top: 0rem;
 }
