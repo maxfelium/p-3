@@ -1,13 +1,22 @@
-/* Decent Defaults */
-
 img,
 video {
   width: 100%;
   height: auto;
 }
 
+#body {
+  background-color: beige;
+}
+
 #map {
   height: 500px;
   width: 800px;
   margin: 5rem auto;
+}
+
+#title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 3%;
+  text-align: center;
+  font-weight: 900;
 }

@@ -157,3 +157,41 @@ const polygon = L.polygon(
   .bindPopup(
     "<p> The area between Burgos and León is known as the Meseta. This part of the Camino is known for its arid climate in the summer with little vegetation. Be sure to pack enough water!</p>"
   );
+
+// Fly to coordinates
+
+var saintJean = [43.1631, -1.2381];
+var burgosMeseta = [42.8196, -1.6446];
+var santiagoCompostela = [42.8806, -8.5446];
+
+// Fly to buttons
+
+var all_buttons = "#button-fly-sjpdp, #button-fly-bur, #button-fly-san";
+
+$("#button-fly-sjpdp").on("click", function () {
+  $(all_buttons).removeClass("pure-button-disabled");
+  map.flyTo(saintJean, 11);
+});
+$("#button-fly-bur").on("click", function () {
+  $(all_buttons).removeClass("pure-button-disabled");
+  map.flyTo(burgosMeseta, 11);
+});
+$("#button-fly-san").on("click", function () {
+  $(all_buttons).removeClass("pure-button-disabled");
+  map.flyTo(santiagoCompostela, 11);
+});
+
+var deactivate = function () {
+  var center = map.getCenter();
+  $(all_buttons).removeClass("pure-button-disabled");
+  console.log(center.distanceTo(santiagoCompostela));
+  if (center.distanceTo(saintJean) < 2000) {
+    $("#button-fly-sjpdp").addClass("pure-button-disabled");
+  } else if (center.distanceTo(burgosMeseta) < 2000) {
+    $("#button-fly-bur").addClass("pure-button-disabled");
+  } else if (center.distanceTo(santiagoCompostela) < 2000) {
+    $("#button-fly-san").addClass("pure-button-disabled");
+  }
+};
+
+addTo(map);
