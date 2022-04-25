@@ -67,6 +67,21 @@ video {
   border-radius: 0.7rem;
 }
 
+#button-zoom-out {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 0.7rem;
+}
+
 #buttons {
   text-align: center;
   padding-bottom: 30%;
