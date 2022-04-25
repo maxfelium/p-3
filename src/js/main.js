@@ -93,6 +93,22 @@ let cardBurgos = `
 
 markerBurgos.bindPopup(cardBurgos);
 
+// Adding Marker on the map (León)
+
+const markerLeón = L.marker([42.5975466, -5.568446]).addTo(map);
+
+// Add popup card (León)
+
+let cardLeón = `
+
+<h4>León (the Meseta ends)</h4>
+<div style="padding-top:1rem">
+<img width="150" height="150"src="./images/leon.jpg"/>
+</div?
+`;
+
+markerLeón.bindPopup(cardLeón);
+
 // Add circle
 
 const circle = L.circle([42.8806, -8.5446], {
