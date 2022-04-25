@@ -160,6 +160,7 @@ const polygon = L.polygon(
 
 // Fly to coordinates
 
+var zoomOut = [43.2937, -5.0492];
 var saintJean = [43.1631, -1.2381];
 var burgosMeseta = [42.3466, -3.68446];
 var santiagoCompostela = [42.8806, -8.5446];
@@ -175,11 +176,6 @@ function resetButtons() {
   burButton.classList.remove("pure-button-disabled");
   sanButton.classList.remove("pure-button-disabled");
 }
-
-// $("#button-fly-sjpdp").on("click", function () {
-//   $(all_buttons).removeClass("pure-button-disabled");
-//   map.flyTo(saintJean, 11);
-// });
 
 document
   .querySelector("#button-fly-sjpdp")
@@ -200,6 +196,13 @@ document
   .addEventListener("click", function () {
     resetButtons();
     map.flyTo(santiagoCompostela, 15.1);
+  });
+
+document
+  .querySelector("#button-zoom-out")
+  .addEventListener("click", function () {
+    resetButtons();
+    map.flyTo(zoomOut, 7);
   });
 
 var deactivate = function () {
