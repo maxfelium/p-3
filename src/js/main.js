@@ -106,4 +106,22 @@ const circle = L.circle([42.8806, -8.5446], {
     "<p> To become a certified Camino Pilgrim, you must start outside the red to walk at least 100 kilometers</p>"
   );
 
-// Add line for the trail
+// Add square for the Meseta
+
+const polygon = L.polygon(
+  [
+    [42.0806, -3.58446],
+    [42.8806, -3.58446],
+    [42.8806, -5.68446],
+    [42.0806, -5.68446],
+  ],
+  {
+    color: `blue`,
+    fillColor: "yellow",
+    fillOpacity: 0.2,
+  }
+)
+  .addTo(map)
+  .bindPopup(
+    "<p> The area between Burgos and León is known as the Meseta. This part of the Camino is known for its arid climate in the summer with little vegetation. Be sure to pack enough water!</p>"
+  );
