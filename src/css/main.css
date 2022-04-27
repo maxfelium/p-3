@@ -96,3 +96,22 @@ video {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 1.5;
 }
+
+.footer {
+  padding: 1rem;
+  background-color: #ffdfb5;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+.footer-text {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.footer-div {
+  background-color: #cccccc;
+  text-align: center;
+}
