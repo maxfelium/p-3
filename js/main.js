@@ -204,18 +204,3 @@ document
     resetButtons();
     map.flyTo(zoomOut, 7);
   });
-
-var deactivate = function () {
-  var center = map.getCenter();
-  $(all_buttons).removeClass("pure-button-disabled");
-  console.log(center.distanceTo(santiagoCompostela));
-  if (center.distanceTo(saintJean) < 2000) {
-    $("#button-fly-sjpdp").addClass("pure-button-disabled");
-  } else if (center.distanceTo(burgosMeseta) < 2000) {
-    $("#button-fly-bur").addClass("pure-button-disabled");
-  } else if (center.distanceTo(santiagoCompostela) < 2000) {
-    $("#button-fly-san").addClass("pure-button-disabled");
-  }
-};
-
-addTo(map);
