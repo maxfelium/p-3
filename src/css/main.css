@@ -115,3 +115,14 @@ video {
   background-color: #cccccc;
   text-align: center;
 }
+
+@media screen and (max-width: 47.9375rem) {
+  * {
+    margin: 0cm;
+  }
+  #map {
+    height: 300px;
+    width: 400px;
+    margin: 3rem auto;
+    padding-bottom: 0rem;
+  }
